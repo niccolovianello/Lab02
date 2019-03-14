@@ -4,10 +4,9 @@ import java.util.*;
 
 public class AlienDictionary {
 	
-	private Map<String, String> dictionary;
+	private Map<String, String> dictionary = new TreeMap<String, String>();;
 	
-	public AlienDictionary(Map<String, String> dictionary) {
-		this.dictionary = new TreeMap<String, String>();
+	public AlienDictionary() {
 	}
 
 	public void addWord(String alienWord, String translation) {
